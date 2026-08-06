@@ -17,7 +17,27 @@ int main()
 	printf("H \t I \t J \t J \t K \t L \n");
 	printf("M \t N \t O \t P \t Q \t R \n");
 	printf("S \t T \t U \t V \t W \t X \n");
-	printf("Y \t Z");
+	printf("Y \t Z\n");
+
+	printf("A Square:\n");
+	printf("**********\n");
+	printf("* \t * \n");
+	printf("* \t * \n");
+	printf("* \t * \n");
+	printf("**********\n");
+
+	printf("A Rectangle:\n");
+	printf("**********\n");
+	printf("* \t * \n");
+	printf("* \t * \n");
+	printf("**********\n");
+
+	printf("A Triangle:\n");
+	printf("    *   \n");
+	printf("  *   * \n");
+	printf(" *     *\n");
+	printf("* * * * *\n");
+
 
 }
 
