@@ -13,7 +13,15 @@ int main()
 	printf("3. Opening and closing braces enclose program statement in a routine.\n");
 	printf("4. All program statement must be terminate by a semicolon.\n");
 
+	printf("A \t B \t C \t D \t E \t F \n");
+	printf("H \t I \t J \t J \t K \t L \n");
+	printf("M \t N \t O \t P \t Q \t R \n");
+	printf("S \t T \t U \t V \t W \t X \n");
+	printf("Y \t Z");
+
 }
+
+
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
