@@ -6,9 +6,15 @@
 
 int main()
 {
-	printf("Hello world. I'm a newbie.");
+	printf("Hello world. I'm a newbie.\n");
+
+	printf("1. In C lowercase are significant.\n");
+	printf("2. main is where program execution begin.\n");
+	printf("3. Opening and closing braces enclose program statement in a routine.\n");
+	printf("4. All program statement must be terminate by a semicolon.\n");
 
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
