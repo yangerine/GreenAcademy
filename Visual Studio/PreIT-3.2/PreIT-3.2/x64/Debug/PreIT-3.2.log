@@ -1,0 +1,3 @@
+﻿  PreIT-3.2.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-3.2\PreIT-3.2\PreIT-3.2.cpp(7,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  PreIT-3.2.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-3.2\x64\Debug\PreIT-3.2.exe
