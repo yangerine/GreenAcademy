@@ -1,0 +1,3 @@
+﻿  PreIT2.cpp
+C:\Users\pc\Documents\Git Fork\Visual Studio\PreIT2\PreIT2\PreIT2.cpp(14,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  PreIT2.vcxproj -> C:\Users\pc\Documents\Git Fork\Visual Studio\PreIT2\x64\Debug\PreIT2.exe

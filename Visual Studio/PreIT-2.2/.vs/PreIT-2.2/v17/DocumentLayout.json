@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\Documents\\Git Fork\\Visual Studio\\PreIT-2.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B41CA7-7C45-4CD8-AE7E-337DF81E996E}|PreIT-2.2\\PreIT-2.2.vcxproj|C:\\Users\\pc\\Documents\\Git Fork\\Visual Studio\\PreIT-2.2\\PreIT-2.2\\PreIT-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4B41CA7-7C45-4CD8-AE7E-337DF81E996E}|PreIT-2.2\\PreIT-2.2.vcxproj|solutionrelative:PreIT-2.2\\PreIT-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PreIT-2.2.cpp",
+              "DocumentMoniker": "C:\\Users\\pc\\Documents\\Git Fork\\Visual Studio\\PreIT-2.2\\PreIT-2.2\\PreIT-2.2.cpp",
+              "RelativeDocumentMoniker": "PreIT-2.2\\PreIT-2.2.cpp",
+              "ToolTip": "C:\\Users\\pc\\Documents\\Git Fork\\Visual Studio\\PreIT-2.2\\PreIT-2.2\\PreIT-2.2.cpp*",
+              "RelativeToolTip": "PreIT-2.2\\PreIT-2.2.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-13T11:51:08.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
