@@ -1,0 +1,10 @@
+﻿  PreIT-3.6.cpp
+D:\D\Green Academy\Bài Tập PreIT\PreIT-3.6\PreIT-3.6\PreIT-3.6.cpp(14,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\Bài Tập PreIT\PreIT-3.6\PreIT-3.6\PreIT-3.6.cpp(14,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\Bài Tập PreIT\PreIT-3.6\PreIT-3.6\PreIT-3.6.cpp(14,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\Bài Tập PreIT\PreIT-3.6\PreIT-3.6\PreIT-3.6.cpp(14,10):
+      this argument is used as a buffer size
+  
+  PreIT-3.6.vcxproj -> D:\D\Green Academy\Bài Tập PreIT\PreIT-3.6\x64\Debug\PreIT-3.6.exe
