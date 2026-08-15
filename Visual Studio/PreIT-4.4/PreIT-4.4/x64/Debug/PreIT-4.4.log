@@ -1,0 +1,6 @@
+﻿  PreIT-4.4.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-4.4\PreIT-4.4\PreIT-4.4.cpp(13,13): warning C4477: 'scanf_s' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'double *'
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-4.4\PreIT-4.4\PreIT-4.4.cpp(13,13):
+      consider using '%lf' in the format string
+  
+  PreIT-4.4.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-4.4\x64\Debug\PreIT-4.4.exe
