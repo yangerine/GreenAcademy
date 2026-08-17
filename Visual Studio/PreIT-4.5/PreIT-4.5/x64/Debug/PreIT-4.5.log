@@ -1,0 +1,3 @@
+﻿  PreIT-4.5.cpp
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-4.5\PreIT-4.5\PreIT-4.5.cpp(34,12): warning C4778: 'printf' : unterminated format string '% \n'
+  PreIT-4.5.vcxproj -> D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-4.5\x64\Debug\PreIT-4.5.exe
