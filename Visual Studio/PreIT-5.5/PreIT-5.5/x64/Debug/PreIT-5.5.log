@@ -1,0 +1,10 @@
+﻿  PreIT-5.5.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-5.5\PreIT-5.5\PreIT-5.5.cpp(12,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-5.5\PreIT-5.5\PreIT-5.5.cpp(12,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-5.5\PreIT-5.5\PreIT-5.5.cpp(12,10):
+      the missing variadic argument 2 is required by format string '%c'
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-5.5\PreIT-5.5\PreIT-5.5.cpp(12,10):
+      this argument is used as a buffer size
+  
+  PreIT-5.5.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-5.5\x64\Debug\PreIT-5.5.exe
