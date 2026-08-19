@@ -1,0 +1,7 @@
+﻿  PreIT-5.10.cpp
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\PreIT-5.10\PreIT-5.10.cpp(24,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\PreIT-5.10\PreIT-5.10.cpp(28,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\PreIT-5.10\PreIT-5.10.cpp(32,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\PreIT-5.10\PreIT-5.10.cpp(36,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\PreIT-5.10\PreIT-5.10.cpp(37,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  PreIT-5.10.vcxproj -> D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-5.10\x64\Debug\PreIT-5.10.exe
