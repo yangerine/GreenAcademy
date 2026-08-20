@@ -1,0 +1,11 @@
+﻿  6.3.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\6.3\6.3.cpp(32,23): warning C4244: '+=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\6.3\6.3.cpp(34,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '__int64'
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\6.3\6.3.cpp(34,9):
+      consider using '%lld' in the format string
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\6.3\6.3.cpp(34,9):
+      consider using '%Id' in the format string
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\6.3\6.3.cpp(34,9):
+      consider using '%I64d' in the format string
+  
+  6.3.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-6\6.3\x64\Debug\6.3.exe
