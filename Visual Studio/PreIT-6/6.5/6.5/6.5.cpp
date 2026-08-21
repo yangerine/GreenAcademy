@@ -12,13 +12,15 @@ int main()
 	printf("Nhap so N: \n");
 	scanf_s("%d", &N);
 
-	int S1 = 0;
+	int S1 = 1; //giai thua cua N
+	int S2 = 0; //tong giai thua
 
 	for (int i = 1; i <= N; i++) {
-		S1 *= N - i;
+		S1 *= i;
+		S2 += S1;
 	}
 	printf("Tong giai thua cua so nguyen %d la: %d \n", N, S1);
-
+	printf("Tong cac giai thua tu 1 den %d la: %d \n", N, S2);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
