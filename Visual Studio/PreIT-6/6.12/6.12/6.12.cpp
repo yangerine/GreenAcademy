@@ -9,21 +9,94 @@ int main()
 {
 	int canh = 4;
 
-	printf("Nhap so canh: \n");
-	scanf_s("%d", &canh);
-
 	//hinh 10,11
-	char edge = ' ';
-	for (int i = 0; i <= canh; i++) //lap 1 dong
-	{ 
-		for (int j = 0; j <= canh; j++) //lap * va " "
+	printf("Hinh 10\n");
+	for (int i = 1; i <= canh; i++) {
+		for (int j = 1; j <= canh; j++) //lap * va " "
 		{
-			//viet 
-			printf(" %lc", edge);
+			printf("* ");
 		}
-		printf("/n");
+		printf("\n");
 	}
 
+	printf("Hinh 11\n");
+	for (int i = 1; i <= canh; i++) {
+		for (int j = 1; j <= canh; j++)
+		{
+			if (i == 1 || i == canh || j == 1 || j == canh)
+				printf("* ");
+			else
+				printf("  ");
+		}
+		printf("\n");
+	}
+
+	//hinh 12, 13
+	int chieu_dai = 5;
+	int chieu_rong = 3;
+
+	printf("hinh 12\n");
+	for (int i = 1; i <= chieu_rong; i++) {
+		for (int j = 1; j <= chieu_dai; j++)
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
+
+	printf("Hinh13\n");
+	for (int i = 1; i <= chieu_rong;i++) {
+		for (int j = 1; j <= chieu_dai; j++) 
+		{
+			if (i == 1 || i == chieu_rong || j == 1 || j == chieu_dai)
+				printf("* ");
+			else
+				printf("  ");
+
+		}
+		printf("\n");
+	}
+
+	//hinh 14, 15, 16, 17
+	int canh_tam_giac = 4;
+
+	printf("Hinh 14\n");
+	for(int i = 1; i <= canh_tam_giac; i++){
+		for (int j = 1; j <= i; j++) //tang dan theo dong
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
+
+	printf("Hinh 15\n");
+	for (int i = 1; i <= canh_tam_giac; i++) 
+	{
+		for (int j = 1; j <= i; j++) 
+		{
+			if (i == 1 || j == 1 || i == j || i == canh_tam_giac)
+				printf("* ");
+			else
+				printf("  ");
+		}
+		printf("\n");
+	}
+
+	printf("Hinh 16\n");
+	for (int i = 1; i <= canh_tam_giac; i++) {
+		for (int j = 1; j <= i; j++) {
+			printf("%d ", j);
+		}
+		printf("\n");
+	}
+
+	printf("Hinh 17\n");
+	for (int i = 4; i >= 1 ; i--) {
+		for (int j = 1; j <= i; j++) {
+			printf("%d ", j);
+		}
+		printf("\n");
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
