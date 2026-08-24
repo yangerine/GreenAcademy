@@ -1,0 +1,82 @@
+﻿  6.15.cpp
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(28,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(28,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(28,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(28,10):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(33,11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(33,11):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(33,11):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(33,11):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(44,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(44,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(44,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(44,10):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(49,11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(49,11):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(49,11):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(49,11):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(60,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(60,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(60,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(60,10):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(65,11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(65,11):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(65,11):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(65,11):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(76,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(76,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(76,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(76,10):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(81,11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(81,11):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(81,11):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(81,11):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(92,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(92,10):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(92,10):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(92,10):
+      this argument is used as a buffer size
+  
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(97,11): warning C4473: 'scanf_s' : not enough arguments passed for format string
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(97,11):
+      placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(97,11):
+      the missing variadic argument 2 is required by format string '%c'
+      D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\6.15\6.15.cpp(97,11):
+      this argument is used as a buffer size
+  
+  6.15.vcxproj -> D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-6\6.15\x64\Debug\6.15.exe
