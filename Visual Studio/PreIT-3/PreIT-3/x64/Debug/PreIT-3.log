@@ -1,0 +1,5 @@
+﻿  3.2.cpp
+  PreIT-3.cpp
+  Generating Code...
+PreIT-3.obj : error LNK2005: main already defined in 3.2.obj
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-3\x64\Debug\PreIT-3.exe : fatal error LNK1169: one or more multiply defined symbols found
