@@ -12,7 +12,7 @@ int main()
 	scanf_s("%d", &n);
 	printf("\n");*/
 	
-	long int array[n];
+	long int array[n]; //tham so cua day phai la mot hang so
 
 
 	printf("Nhap cac gia tri cho bang (tong 10 so): ");
@@ -24,7 +24,7 @@ int main()
 	bool symmetry = true;
 
 	for (int i = 0; i < n; i++) { 
-		if (array[i] != array[n - 1 - i]) { 
+		if (array[i] != array[n - 1 - i]) { //so sanh xem vi tri dau [0] va cuoi co bang nhau khong
 			symmetry = false; //neu khong doi xung thi ngung vong lap
 			break;
 		}
