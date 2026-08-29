@@ -1,72 +1,72 @@
 // 7.9.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-#include <stdio.h>
-#include <math.h>
+	#include <iostream>
+	#include <stdio.h>
+	#include <math.h>
 
-void xuat_mang(int n, int arr[]);
-void nhap_mang(int& n, int arr[]);
-void hoan_vi(int& a, int& b);
-void sort(int n, int arr[]);
+	void xuat_mang(int n, int arr[]);
+	void nhap_mang(int& n, int arr[]);
+	void hoan_vi(int& a, int& b);
+	void sort(int n, int arr[]);
 
-int main()
-{
-	const int max = 100;
-	int arr[max];
-	int n;
+	int main()
+	{
+		const int max = 100;
+		int arr[max];
+		int n;
 
-	printf("Nhap so luong cua mang: ");
-	scanf_s("%d", &n);
+		printf("Nhap so luong cua mang: ");
+		scanf_s("%d", &n);
 
-	nhap_mang(n, arr);
-	xuat_mang(n, arr);
-	printf("\n");
-
-	//sap xep cac so chan trong mang tang dan
-	sort(n, arr);
-	printf("Cac phan tu chan sap xep theo thu tu tang dan: ");
-	xuat_mang(n, arr);
-
-}
-
-void nhap_mang(int &n, int arr[]) {
-	printf("\nNhap cac phan tu cua mang: ");
-
-	for (int i = 0; i < n; i++) {
-		printf("Phan tu %d = ", i);
-		scanf_s("%d", &arr[i]);
+		nhap_mang(n, arr);
 		printf("\n");
-	}
+		xuat_mang(n, arr);
+		printf("\n");
 
-}
-
-void xuat_mang(int n, int arr[]) {
+		//sap xep cac so co tri so chan trong mang tang dan
+		sort(n, arr);
+		printf("Cac phan tu co tri so chan sap xep theo thu tu tang dan: ");
+		xuat_mang(n, arr);
 	
-	for (int i = 0; i < n; i++) {
-		printf("%d ", arr[i]);
+		return 0;
 	}
-}
 
-void hoan_vi(int& a, int& b) {
-	int temp = a;
-	a = b;
-	b = temp;
-}
+	void nhap_mang(int &n, int arr[]) {
+		printf("\nNhap cac phan tu cua mang: ");
 
-void sort(int n, int arr[]) {
-	for (int i = 0; i < n-1; i += 2) {//xet tung phan tu la so chan
-		if(arr[i] % 2 == 0){
+		for (int i = 0; i < n; i++) {
+			printf("Phan tu %d = ", i);
+			scanf_s("%d", &arr[i]);
+		}
+
+	}
+
+	void xuat_mang(int n, int arr[]) {
+	
+		for (int i = 0; i < n; i++) {
+			printf("%d ", arr[i]);
+		}
+	}
+
+	void hoan_vi(int& a, int& b) {
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+
+	void sort(int n, int arr[]) { //sap xep vi tri cac phan tu trong mang
+		for (int i = 0; i < n; i += 2) {
+		
 			for (int j = i + 2; j < n; j += 2) {
-				if (arr[i] > arr[j] && arr[j] % 2 == 0)
+				if (arr[i] > arr[j])
 					hoan_vi(arr[i], arr[j]);
-
 			}
+
+	
 		}
 	
 	}
-	
-}
 
 
 
