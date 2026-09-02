@@ -12,6 +12,8 @@ int min_value;
 int first_pos;
 int last_pos;
 int x;
+int dem = 0;
+
 
 void lon_nhat(int a[], int n, int &max_value);
 void be_nhat(int a[], int n, int &min_value);
@@ -19,6 +21,7 @@ void nhap_mang(int a[], int &n);
 void xuat_mang(int a[], int n);
 void x_first_pos(int a[], int n, int &first_pos);
 void x_last_pos(int a[], int n, int &last_pos);
+void count(int a[], int n, int &dem);
 
 int main()
 {	
@@ -53,6 +56,9 @@ int main()
 
 	x_last_pos(a, n, last_pos);
 	printf("\nVi tri cuoi cung cua %d xuat hien trong mang la: %d", x, last_pos);
+
+	count(a, n, dem);
+	printf("\nSo lan %d xuat hien trong mang la: %d lan", x, dem);
 
 	
 }
@@ -114,7 +120,7 @@ void x_first_pos(int a[], int n, int &first_pos) {
 
 //ham tra vi tri cuoi cung cua so x xuat hien trong mang
 void x_last_pos(int a[], int n, int &last_pos) {
-	for (int i = n; i < n-1; i--) {
+	for (int i = n; i > 0; i--) {
 		
 		if (x == a[i]) {
 			last_pos = i;
@@ -123,6 +129,13 @@ void x_last_pos(int a[], int n, int &last_pos) {
 	}
 }
 
+//dem so lan x xuat hien trong mang
+void count(int a[], int n, int &dem) {
+	for (int i = 0; i < n; i++) {
+		if (x == a[i])
+			dem += 1;
+	}
+}
 
 
 
