@@ -25,14 +25,14 @@ void xuat_mang(int a[], int n) {
 
 void insert(int a[], int& n, int x) {
 	int i ;
-	for (i = n - 1 ; i >= 0; i--) {
+	for (i = n - 1 ; i >= 0; i--) { //dich cac phan tu sang ben phai 1 don vi
 		if (a[i] > x) {
 			a[i+1] = a[i];
 		}
-		else
+		else //neu a[i] > x thi dung lai
 			break;
 	}
-	a[i + 1] = x;
+	a[i + 1] = x;//chen x vao trong mang
 	n++;
 }
 

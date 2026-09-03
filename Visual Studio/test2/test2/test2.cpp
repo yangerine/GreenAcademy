@@ -8,21 +8,15 @@
 
 int main()
 {
-	char edge[100];
-	int n;
-
-	printf("Nhap so canh: \n");
-	scanf_s("%d", &n);
-
-	for (int j = 0; j <= n; j++) {
-		
-		for (int i = 0; i <= n; i++) {
-			edge[i] += '*';
-			printf("%lc", edge);
-		}
-		printf(" %lc\n", edge);
+	
+	int array[] = { 1, 4, 3, 6, 8, 2, 5 };
+	int what = array[0];
+	for (int index = 0; index < 7; index++) {
+		if (array[index] > what)
+			what = array[index];
 	}
-
+	printf("%d", what);
+	
 
 
 
