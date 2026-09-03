@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\Documents\\Git Fork\\GreenAcademy\\Visual Studio\\PreIT-5.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4E1EDCE-9F5F-4BF6-8CBA-A55C9FE63119}|PreIT-5.2\\PreIT-5.2.vcxproj|C:\\Users\\pc\\Documents\\Git Fork\\GreenAcademy\\Visual Studio\\PreIT-5.2\\PreIT-5.2\\PreIT-5.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B4E1EDCE-9F5F-4BF6-8CBA-A55C9FE63119}|PreIT-5.2\\PreIT-5.2.vcxproj|solutionrelative:PreIT-5.2\\PreIT-5.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PreIT-5.2.cpp",
+              "DocumentMoniker": "C:\\Users\\pc\\Documents\\Git Fork\\GreenAcademy\\Visual Studio\\PreIT-5.2\\PreIT-5.2\\PreIT-5.2.cpp",
+              "RelativeDocumentMoniker": "PreIT-5.2\\PreIT-5.2.cpp",
+              "ToolTip": "C:\\Users\\pc\\Documents\\Git Fork\\GreenAcademy\\Visual Studio\\PreIT-5.2\\PreIT-5.2\\PreIT-5.2.cpp",
+              "RelativeToolTip": "PreIT-5.2\\PreIT-5.2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-18T12:47:38.886Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
