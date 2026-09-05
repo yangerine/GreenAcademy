@@ -4,26 +4,22 @@
 #include <iostream>
 #include <stdio.h>
 
+int add(int first, int second)
+{
+	return first + second + 15;
+}
+int operation(int a, int b, int (*functocall)(int, int))
+{
+	return (*functocall)(a, b);
+}
 int main()
 {
-    //how to use switch syntax 
-    int day_of_week;
-
-    printf("Enter day of the week: \n");
-    scanf_s("%d", &day_of_week);
-
-    switch (day_of_week) {
-        case 1: { printf("Sunday"); } break;
-        case 2: { printf("Monday"); } break;
-        case 3: { printf("Tuesday"); } break;
-        case 4: { printf("Wenesday"); } break;
-        case 5: { printf("Thursday"); } break;
-        case 6: { printf("Friday"); } break;
-        case 7: { printf("Saturday"); } break;
-        default : { printf("Wrong day"); } break; //press any button
-    
-    }
+	int result;
+	int (*plus)(int, int) = add;
+	result = operation(15, 10, plus);
+	printf("%d", result);
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
