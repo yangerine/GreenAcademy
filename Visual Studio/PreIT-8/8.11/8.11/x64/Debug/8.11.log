@@ -1,0 +1,8 @@
+﻿  8.11.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(25,12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(33,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(41,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(47,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(48,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\8.11\8.11.cpp(53,1): warning C4715: 'giai_phuong_trinh': not all control paths return a value
+  8.11.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.11\x64\Debug\8.11.exe
