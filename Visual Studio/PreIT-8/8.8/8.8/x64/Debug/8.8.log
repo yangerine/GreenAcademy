@@ -1,0 +1,4 @@
+﻿  8.8.cpp
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-8\8.8\8.8\8.8.cpp(10,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-8\8.8\8.8\8.8.cpp(15,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  8.8.vcxproj -> D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-8\8.8\x64\Debug\8.8.exe
