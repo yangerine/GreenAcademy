@@ -1,0 +1,4 @@
+﻿  8.12.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.12\8.12\8.12.cpp(68,6): warning C4101: 'dem_chan': unreferenced local variable
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.12\8.12\8.12.cpp(69,6): warning C4101: 'dem_le': unreferenced local variable
+  8.12.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-8\8.12\x64\Debug\8.12.exe
