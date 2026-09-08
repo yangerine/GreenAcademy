@@ -4,6 +4,8 @@
 #include <iostream>
 #include <stdio.h>
 
+int a;
+
 int add(int first, int second)
 {
 	return first + second + 15;
