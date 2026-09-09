@@ -34,6 +34,28 @@ int main()
 	}
 
 	printf("Tong so ky tu trong mang la: %d", dem);
+
+	//dem tat ca cac ký so trong chuoi
+
+	int dem_so = 0;
+	for (int i = 0; i < do_dai; i++) 
+	{
+		if (isdigit(input[i]) != 0) {
+			dem_so++;
+		}
+	}
+
+	printf("\nCac ky so co trong chuoi: %d", dem_so);
+
+	//dem tat ca cac khoang trang trong chuoi
+
+	int dem_blank = 0;
+	for (int i = 0; i < do_dai; i++) {
+		if (isspace(input[i]) != 0) {
+			dem_blank++;
+		}
+	}
+	printf("\nSo khoang trang có trong chuoi: %d", dem_blank);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
