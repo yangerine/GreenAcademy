@@ -1,4 +1,5 @@
 ﻿  10.9.cpp
-C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-10\10.9\10.9\10.9.cpp(67,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-10\10.9\10.9\10.9.cpp(86,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  10.9.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-10\10.9\x64\Debug\10.9.exe
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-10\10.9\10.9\10.9.cpp(57,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-10\10.9\10.9\10.9.cpp(81,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-10\10.9\10.9\10.9.cpp(96,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  10.9.vcxproj -> D:\D\Green Academy\GreenAcademy\Visual Studio\PreIT-10\10.9\x64\Debug\10.9.exe

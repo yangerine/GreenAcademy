@@ -12,6 +12,7 @@ char domain[] = "@greenacademy.edu.vn";
 char ten[100];
 char ho_va_ten_lot[100];
 
+
 void lower_case(char s[], int length) {
 	//doi tat ca ve in thuong
 	for (int i = 0; i < length; i++) {
@@ -28,61 +29,64 @@ void tach_ho_ten(char s[], int length, char ten[], char ho_va_ten_lot[]) {
 
 	//duyet tu phai sang trai de lay ten sau khoang space
 
-	for (int i = length - 1; i > 0; i--) {
+	for (int i = length - 1; i >= 0; i--) {
 		if (isspace(s[i]) != 0) {
 			cut_pos = i; //tim thay khoang trang dau tien tu phai sang thi stop
 			break;
 		}
 	}
 
-	//copy phan ten vao bien ten
 	if (cut_pos == -1) {
 		//truong hop chi dien moi ten
 		strcpy_s(ten,100, s);
+		ho_va_ten_lot[0] = '\0';
 	}
 	else
 	{
+		//copy phan ten
 		strcpy_s(ten, 100, &s[cut_pos + 1]);
-	}
 
-	//copy phan con lai trong chuoi s vao ho va ten lot
-
-	for (int i = 0; i < cut_pos; i++) {
-		ho_va_ten_lot[i] = s[i];
-	}
-	ho_va_ten_lot[cut_pos] = '\0';//cat chuoi sau vi tri cut_pos
-
-}
-
-void xoa_space(char s[], int length) {
-	for (int i = 0; i < length; i++) {
-		if (isspace(s[i]) != 0) { 
-			s[i] = s[i + 1];
-		}
+		//copy phan ho va ten lot
+		strncpy_s(ho_va_ten_lot, 100, s, cut_pos); //luu y dung strncpy
+		ho_va_ten_lot[cut_pos] = '\0';
 	}
 }
 
+//tao ham viet tat (lay cac chu cai dau tien)
 void viet_tat(char ho_lot[], char viet_tat[]) {
-	char temp_tat[100] = "";
 	int length = strlen(ho_lot);
 	int k = 0;
-	int i = 0;
 
-	//lay ky tu dau
-	if (ho_lot[i] != '\0') {
-		temp_tat[k++] = ho_lot[i];
-		i++;
+	if (length == 0) {
+		viet_tat[0] = '\0';
+		return;
 	}
 
+	//lay ky tu dau
+	viet_tat[k++] = ho_lot[0];
+
 	//lay ky tu sau moi khoang space
-	for (i=0 ; ho_lot[i] != '\0'; i++) {
-		if (isspace(ho_lot[i-1]) && isspace(ho_lot[i]) == 0 ) {
-			temp_tat[k++] = ho_lot[i + 1];
+	for (int i = 1 ; i < length; i++) {
+		if (isspace(ho_lot[i-1]) && !isspace(ho_lot[i]) ) {
+			viet_tat[k++] = ho_lot[i];
 		}
 	}
 	
-	temp_tat[k] = '\0';
-	strcat_s(viet_tat, 100, temp_tat);
+	viet_tat[k] = '\0';
+}
+
+//tao ho va ten lot viet lien
+void viet_lien(char ho_va_ten_lot[], char ket_qua_viet_lien[]) {
+	int k = 0;
+	int length = strlen(ho_va_ten_lot);
+
+	for (int i = 0; i < length; i++)
+	{
+		if (!isspace(ho_va_ten_lot[i])) {
+			ket_qua_viet_lien[k++] = ho_va_ten_lot[i];
+		}
+	}
+	ket_qua_viet_lien[k] = '\0';
 }
 
 int main()
@@ -91,34 +95,36 @@ int main()
 	gets_s(s, (unsigned int)sizeof(s));
 	int length = strlen(s);
 
-	//tao email: ten.ho_va_ten_lot@greenacademy.edu.vn
-
 	lower_case(s, length);
 	tach_ho_ten(s, length, ten, ho_va_ten_lot);
-	xoa_space(ho_va_ten_lot, 100);
 
-
-	//noi cac phan tu vao voi nhau
+	//tao email: ten.ho_va_ten_lot@greenacademy.edu.vn
+	char ho_ten_lot_lien[100] = "";
 	char email1[200] = "";
-	strcat_s(email1, ten);
-	strcat_s(email1, ".");
-	strcat_s(email1, ho_va_ten_lot);
-	strcat_s(email1, domain);
+
+	viet_lien(ho_va_ten_lot, ho_ten_lot_lien);
+
+	strcat_s(email1,200, ten);
+	strcat_s(email1, 200, ".");
+	strcat_s(email1, 200, ho_ten_lot_lien);
+	strcat_s(email1, 200, domain);
 	
 
 	printf("\nEmail: %s", email1);
 
 	//noi yeucau 2
+	char ten_tat[100] = "";
+	viet_tat(ho_va_ten_lot, ten_tat);
+
 	char email2[200] = "";
-	char ten_tat[100];
 
 	viet_tat(ho_va_ten_lot, ten_tat);
-	strcat_s(email2, ten);
-	strcat_s(email2, ".");
-	strcat_s(email2, ten_tat);
-	strcat_s(email2, domain);
+	strcat_s(email2, 200, ten);
+	strcat_s(email2, 200, ".");
+	strcat_s(email2, 200, ten_tat);
+	strcat_s(email2, 200, domain);
 
-	printf("\n Email 2: %s", email2);
+	printf("\n\nEmail 2: %s", email2);
 
 
 }
