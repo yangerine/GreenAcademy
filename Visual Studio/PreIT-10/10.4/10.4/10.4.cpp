@@ -23,12 +23,20 @@ int main()
 	int length_s1 = strlen(s1);
 	int length_s2 = strlen(s2);
 
-	if (length_s1 == length_s2) {
+	/*if (length_s1 == length_s2) {
 		printf("\nChuoi 1 co do dai bang Chuoi 2\n");
 	}
 	else if (length_s1 > length_s2)
 		printf("Chuoi 1 dai hon Chuoi 2\n");
 	else if (length_s1 < length_s2)
+		printf("Chuoi 1 it ky tu hon Chuoi 2\n");*/
+
+	if (strcmp(s1,s2) == 0 )  {
+		printf("\nChuoi 1 co do dai bang Chuoi 2\n");
+	}
+	else if (strcmp(s1, s2) > 0)
+		printf("Chuoi 1 dai hon Chuoi 2\n");
+	else if (strcmp(s1, s2) < 0)
 		printf("Chuoi 1 it ky tu hon Chuoi 2\n");
 
 	//kiem tra chuoi s2 co ton tai trong chuoi 1 khong
