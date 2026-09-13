@@ -18,14 +18,63 @@ int main()
 
 	books book[50];
 
+
+
 	int luu_tru;
 
 	printf("Nhap so luong sach can luu tru: ");
 	scanf_s("%d", &luu_tru);
 
-	printf("\nNhap thong tin sach: ");
-	printf("\nNhap ten: ");
-	scanf_s("%s", book1.)
+	printf("\nNhap thong tin sach: \n");
+
+	//vi \n van bi nhan vao o ham gets_s nen dung ham rewind de loai bo \n
+	rewind(stdin);
+
+	for (int i = 0; i < luu_tru; i++)
+	{
+		printf("Nhap tua de sach: ");
+		gets_s(book[i].title);
+
+		printf("\nNhap ten tac gia: ");
+		gets_s(book[i].author);
+
+		printf("\nNhap so trang: ");
+		scanf_s("%d", &book[i].page);
+
+		printf("\nNhap gia tien: ");
+		scanf_s("%d", &book[i].price);
+
+		printf("\n");
+		rewind(stdin);
+
+	}
+
+	//xuat thong tin sach
+	for (int i = 0; i < luu_tru; i++) {
+		printf("\n--Sach %d--\n", i+1);
+		printf("Ten: %s	\n", book[i].title);
+		printf("Tac gia: %s \n", book[i].author);
+		printf("So trang: %d \n", book[i].page);
+		printf("Gia: %d VND \n", book[i].price);
+	}
+
+	//tim kiem va hien thi nhung cuon sach co tu 200 trang tro len
+	printf("\nSach co 200 trang tro len: ");
+
+	for (int i = 0; i < luu_tru; i++) {
+		if (book[i].page >= 200) {
+			printf(" %s,", book[i].title);
+		}
+	}
+
+	//tim kiem va hien thi sach co gia thap hon 90.000
+	printf("\nSach co gia duoi 90.000 VND: ");
+
+	for (int i = 0; i < luu_tru; i++) {
+		if (book[i].price <= 90000) {
+			printf(" %s,", book[i].title);
+		}
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
