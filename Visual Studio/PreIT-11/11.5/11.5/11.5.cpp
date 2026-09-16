@@ -8,20 +8,19 @@
 
 int so_luong;
 
+
 struct mau_giay
 {
 	char ID[6];
 	float size;
 	int sex;
 	int ammount;
-	float price;
+	int price;
 };
 
-void nhap_giay(mau_giay giay[]) {
-	printf("Nhap so luong: ");
-	scanf_s("%d", &so_luong);
+mau_giay giay[50];
 
-	while (getchar() != '\n');
+void nhap_giay(mau_giay giay[], int so_luong) {
 
 	for (int i = 0; i < so_luong; i++) {
 		printf("\nID: ");
@@ -34,32 +33,120 @@ void nhap_giay(mau_giay giay[]) {
 		scanf_s("%d", &giay[i].sex);
 
 		switch (giay[i].sex) {
-		case 1: printf("\nDanh cho nam"); break;
-		case 2: printf("\nUnisex"); break;
-		case 0: printf("\nDanh cho nu"); break;
+		case 1: printf("- Danh cho nam"); break;
+		case 2: printf("- Unisex"); break;
+		case 0: printf("- Danh cho nu"); break;
 		}
 		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-		printf("\nAmmount: ");
+		printf("\n\nAmmount: ");
 		scanf_s("%d", &giay[i].ammount);
 
 		printf("\nPrice: ");
-		scanf_s("%f", &giay[i].price);
+		scanf_s("%d", &giay[i].price);
 
 		while (getchar() != '\n');
 
 	}
 }
 
-void xuat_giay() {
+void xuat_giay(mau_giay giay[], int so_luong) {
+	for (int i = 0; i < so_luong; i++) {
+		printf("\n-----------\n");
+		printf("\nID: %s", giay[i].ID);
+		printf("\nSize: %.1f", giay[i].size);
+		printf("\nGioi tinh: %d", giay[i].sex);
+		printf("\nSo luong: %d", giay[i].ammount);
+		printf("\nDon gia: %d", giay[i].price);
+	}
+}
 
+//tim giay dua vao gioi tinh và kich thuoc
+void tim_giay(int gioi_tinh, float size_giay) {
+	bool tim_thay = false;
+	
+	for (int i = 0; i < so_luong; i++) {
+	
+		if (giay[i].sex == gioi_tinh && size_giay == giay[i].size) {
+			printf("\nID: %s", giay[i].ID);
+			printf("\nSize: %.1f", giay[i].size);
+			printf("\nGioi tinh: %d", giay[i].sex);
+			printf("\nSo luong: %d", giay[i].ammount);
+			printf("\nDon gia: %d", giay[i].price);
+			printf("\n-----------\n");
+
+			tim_thay = true;
+		}
+	}
+
+	if (!tim_thay) {
+		printf("\nKhong ton tai mau giay!");
+	}
+}
+
+void mua_giay(char ma_giay[], int so_luong_can_tim) {
+	int index_can_tim = -1;
+	
+	int i = 0;
+
+	for (; i < so_luong; i++) {
+		if (strcmp(ma_giay, giay[i].ID) == 0) {
+			printf("\nMa giay nay co ton tai.");
+			index_can_tim = i;
+			break;
+		}
+	}
+
+	if (index_can_tim == -1) {
+		printf("\nMa giay khong ton tai!");
+		return;
+	}
+
+	if (so_luong_can_tim <= giay[index_can_tim].ammount) {
+		printf("\nGiay con hang!");
+		int tong_tien = giay[i].price * so_luong_can_tim;
+		printf("\nSo tien can tra: %d VND", tong_tien);
+	}
+	else {
+		printf("\nSo luong trong kho khong du so luong can mua!");
+	}
+
+	
 }
 
 int main()
 {
 
-	mau_giay giay[50];
+	printf("Nhap so luong: ");
+	scanf_s("%d", &so_luong);
+	rewind(stdin);
 
-	nhap_giay(giay);
+	nhap_giay(giay, so_luong);
+	xuat_giay(giay, so_luong);
+
+	//tim giay
+	int gioi_tinh;
+	float size_giay;
+
+	printf("\n\nNhap gioi tinh (0-nu; 1-nam; 2-unisex) : ");
+	scanf_s("%d", &gioi_tinh);
+
+	printf("\nNhap size giay: ");
+	scanf_s("%f", &size_giay);
+	
+	tim_giay(gioi_tinh, size_giay);
+
+	char ma_giay[15];
+	int so_luong_can_tim;
+
+	rewind(stdin);
+	printf("\n\nNhap ma giay muon tim: ");
+	gets_s(ma_giay);
+
+	rewind(stdin);
+	printf("\nNhap so luong muon mua: ");
+	scanf_s("%d", &so_luong_can_tim);
+
+	mua_giay(ma_giay, so_luong_can_tim);
 
 }
 
