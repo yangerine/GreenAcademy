@@ -105,6 +105,13 @@ int  kiem_tra(phan_so phanSo) {
 
 int main()
 {
+	//Demo();
+	int result = tim_UCLN(24, 36);
+	printf("ucln: %d", result);
+}
+
+void Demo()
+{
 	phan_so phanSo_1;
 	nhap_phan_so(phanSo_1);
 	xuat_phan_so(phanSo_1);
@@ -126,14 +133,13 @@ int main()
 	printf("\n Phan so sau khi rut gon: ");
 	xuat_phan_so(ps_rut_gon);
 
-	
+
 	if (kiem_tra(phanSo_1) == -1) {
 		printf("\nPhan so am");
 	}
 	else if (kiem_tra(phanSo_1) == 1) {
 		printf("\nPhan so duong");
 	}
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
