@@ -46,7 +46,27 @@ void tim_san_pham(char ma_hang_can_tim[]) {
 	}
 }
 
-void mua_hang(char ma_hang_can_tim, int so_luong_mua) {
+void mua_hang(char ma_hang_can_tim[], int so_luong_mua) {
+	
+	bool isFound = false;
+
+	for (int i = 0; i < tong_so_luong; i++) {
+		if (strcmp(san_pham[i].ma_hang, ma_hang_can_tim) == 0) {
+			isFound = true;
+			if (so_luong_mua < san_pham[i].so_luong) {
+				printf("\nDu hang!");
+				break;
+			}
+			else {
+				printf("\nKhong du hang!");
+			}
+		}
+	}
+
+	if (!isFound) {
+		printf("\nKhong tim thay ma!");
+		return;
+	}
 
 }
 
@@ -71,16 +91,57 @@ int main()
 
 	}
 
-	hien_thi_thong_tin();
+	//lua chon cac chuc nang
+	char tiep_tuc;
 
-	char ma_hang_can_tim[10];
+	do {
 
-	rewind(stdin);
-	printf("\nNhap ma hang can tim: ");
-	gets_s(ma_hang_can_tim);
+		int chon;
 
-	tim_san_pham(ma_hang_can_tim);
-	
+		printf("\n======MENU=====\n");
+		printf("\n1. Xem thong tin cac san pham dang co");
+		printf("\n2. Tim san pham dua vao ma hang");
+		printf("\n3. Mua hang");
+		printf("\n===============\n");
+		
+		printf("\nChon chuc nang (1-3): ");
+		scanf_s("%d", &chon);
+
+		switch (chon) {
+		case 1: hien_thi_thong_tin(); break;
+		case 2: 
+			char ma_hang_can_tim[10];
+
+			rewind(stdin);
+			printf("\nNhap ma hang can tim: ");
+			gets_s(ma_hang_can_tim);
+
+			tim_san_pham(ma_hang_can_tim);
+			break;
+
+		case 3:
+			int so_luong_mua;
+
+			rewind(stdin);
+			printf("\nNhap ma can tim: ");
+			gets_s(ma_hang_can_tim);
+
+			rewind(stdin);
+			printf("\nNhap so luong can mua: ");
+			scanf_s("%d", &so_luong_mua);
+
+			mua_hang(ma_hang_can_tim, so_luong_mua);
+			break;
+
+		default:
+			printf("\nChuc nang khong ton tai!");
+			break;
+		}
+		rewind(stdin);
+		printf("\nAn Y de tiep tuc, N de thoat: ");
+		scanf_s("%c", &tiep_tuc);
+
+	} while (tiep_tuc == 'Y' || tiep_tuc == 'y');
 
 }
 
