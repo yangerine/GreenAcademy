@@ -23,7 +23,7 @@ void nhap_phan_so(phan_so &phanSo) {
 
 	printf("\nNhap mau so: ");
 	scanf_s("%d", &phanSo.mau_so);
-	printf("\n test1");
+	
 	if (phanSo.mau_so == 0) {
 		do {
 
@@ -32,11 +32,10 @@ void nhap_phan_so(phan_so &phanSo) {
 
 		} while (phanSo.mau_so == 0);
 	}
-	printf("\n test2");
-
+	
 }
 
-void xuat_phan_so(phan_so phan_so) {
+void xuat_phan_so(phan_so phanSo) {
 	if (phanSo.mau_so == 1) {
 		printf(" %d ", phanSo.tu_so);
 	}
@@ -53,10 +52,12 @@ int tim_UCLN(int a, int b) {
 	a = abs(a);
 	b = abs(b);
 
+	//dung phuong phap euclid
+	//lay b chia cho so du cua a chia cho b cho den khi b = 0
 	while (b != 0) {
-		int temp = a;
-		b = a % b;
-		a = temp;
+		int so_du = a % b;
+		a = b;
+		b = so_du;
 	}
 	return a;
 }
@@ -105,13 +106,6 @@ int  kiem_tra(phan_so phanSo) {
 
 int main()
 {
-	//Demo();
-	int result = tim_UCLN(24, 36);
-	printf("ucln: %d", result);
-}
-
-void Demo()
-{
 	phan_so phanSo_1;
 	nhap_phan_so(phanSo_1);
 	xuat_phan_so(phanSo_1);
@@ -141,6 +135,8 @@ void Demo()
 		printf("\nPhan so duong");
 	}
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
