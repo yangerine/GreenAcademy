@@ -1,0 +1,7 @@
+﻿  12.1.cpp
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-12\12.1\12.1\12.1.cpp(23,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-12\12.1\12.1\12.1.cpp(69,35): warning C4474: 'fprintf' : too many arguments passed for format string
+      C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-12\12.1\12.1\12.1.cpp(69,35):
+      placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  
+  12.1.vcxproj -> C:\Users\pc\Documents\Git Fork\GreenAcademy\Visual Studio\PreIT-12\12.1\x64\Debug\12.1.exe
